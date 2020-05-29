@@ -7,9 +7,12 @@
     <script src ="app.js"></script>
   </head>
   <body>
+    <h1>Lunch Check</h1>
     <div ng-controller="LunchCheckController">
-      Enter Lunch Items : <input type="text" ng-model="lunchname" ng-click="check()">
-      <p>{{error}}</p>
+      Enter Lunch Items : <input type="text" ng-model="lunchname" ng-click="clear()">
+      <button type="button" ng-click="check()">Check If Too Much</button>
+      <p style="color:red;">{{Errmessage}}</p>
+      <p style="color:green;">{{message}}</p>
     </div>
   </body>
 </html>
