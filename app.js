@@ -16,7 +16,7 @@
         var a = $scope.lunchname;
 
         if(a == null || a == "" || a == undefined){
-          $scope.message="";
+        $scope.message="";
         return $scope.Errmessage="Please enter data first";
         }
         else
